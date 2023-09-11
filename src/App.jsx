@@ -23,7 +23,7 @@ function App() {
       console.log(checkoutData);
   
       // Make the POST request to create a payment
-      const response = await axios.post('http://epay.chargily.com.dz/api/invoice', checkoutData, {
+      const response = await axios.post('https://epay.chargily.com.dz/api/invoice', checkoutData, {
         headers: {
           'X-Authorization': API_KEY,
           'Accept': 'application/json',
